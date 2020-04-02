@@ -1,0 +1,548 @@
+$color-primary: white;
+$font-primary: 4rem;
+$font-family: 'Titillium Web', sans-serif;
+$font-family-para:'Roboto', sans-serif;
+
+@import "keyframes";
+
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    color:$color-primary;
+    font-family: $font-family;
+    background-image: radial-gradient(#cfd9df ,#e2ebf0);
+    background-size: auto;
+    background-repeat: no-repeat;
+  
+}
+
+body{
+  overflow: hidden;
+}
+.background_image{
+    background-image: url(images/joshua-earle-8MbdD0pHXGY-unsplash.jpg);
+    background-size: auto;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    width: 100%;
+    height: 50%;
+}
+
+
+p{
+  color: black;
+  font-family: $font-family-para;
+  width: 70%;
+  margin-left: 15%;
+    text-align: center;
+}
+
+.container{
+   text-align: center;
+}
+
+
+
+
+
+.page{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+.menu{
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
+  margin: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  height: 10vh;
+  z-index: 1;
+    animation: slide 1s ease-in-out;
+    animation-fill-mode: both;
+  border-bottom: 3px solid white;
+  &:hover li{
+    filter: blur(3px);
+    transform: scale(1.2);
+    transition: 600ms;
+  }
+  
+
+  
+li:nth-child(1){
+    overflow: hidden;
+    padding-right: 3.8px;
+    a{
+      color: white;
+      position: relative;
+      text-align: center;
+      &:hover{
+      
+      span{
+        background-image: linear-gradient(to right, #00FF33,#0FDDAF);
+        z-index: 3;
+      }
+      span:nth-child(1){
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        animation: animate 2s linear infinite;
+        animation-fill-mode: both;
+          margin-bottom: 1%;
+      }
+      span:nth-child(2){
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        animation: animate 2s linear infinite reverse;
+        animation-fill-mode: both;
+      }
+          span:nth-child(3){
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        top: 0;
+        right: 0;
+         animation: animate1 2s linear infinite;
+        animation-fill-mode: both;
+            animation-delay: 1s;
+  
+      }
+          span:nth-child(4){
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        bottom: 0;
+        left: 0;
+        animation: animate1 2s linear infinite reverse;
+        animation-fill-mode: both;
+            animation-delay: 1s;
+      }
+      }
+    }
+    &:hover{
+      filter: blur(0);
+      cursor: pointer;
+      transform: scale(1.5);
+      transition: 600ms;
+      }
+      a{
+        text-decoration: none;
+        &:visited{
+          color: white;
+        }
+    }
+  }
+li:nth-child(2){
+    overflow: hidden;
+    padding-right: 3.5px;
+   padding-left: 2px;
+    a{
+      color: white;
+      position: relative;
+      text-align: center;
+      &:hover{
+      
+      span{
+        background-image: linear-gradient(to right, #00FF33,#0FDDAF);
+        z-index: 3;
+      }
+      span:nth-child(1){
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        animation: animate 2s linear infinite;
+        animation-fill-mode: both;
+          margin-bottom: 1%;
+      }
+      span:nth-child(2){
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        animation: animate 2s linear infinite reverse;
+        animation-fill-mode: both;
+      }
+          span:nth-child(3){
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        top: 0;
+        right: 0;
+         animation: animate1 2s linear infinite;
+        animation-fill-mode: both;
+            animation-delay: 1s;
+  
+      }
+          span:nth-child(4){
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        bottom: 0;
+        left: -5%;
+        animation: animate1 2s linear infinite reverse;
+        animation-fill-mode: both;
+            animation-delay: 1s;
+      }
+      }
+    }
+    &:hover{
+      filter: blur(0);
+      cursor: pointer;
+      transform: scale(1.5);
+      transition: 600ms;
+      }
+      a{
+        text-decoration: none;
+        &:visited{
+          color: white;
+        }
+    }
+  }
+li:nth-child(3){
+    overflow: hidden;
+    padding-right: 3.2px;
+   padding-left: 2px;
+    a{
+      color: white;
+      position: relative;
+      text-align: center;
+      &:hover{
+      
+      span{
+        background-image: linear-gradient(to right, #00FF33,#0FDDAF);
+        z-index: 3;
+      }
+      span:nth-child(1){
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        animation: animate 2s linear infinite;
+        animation-fill-mode: both;
+          margin-bottom: 1%;
+      }
+      span:nth-child(2){
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        animation: animate 2s linear infinite reverse;
+        animation-fill-mode: both;
+      }
+          span:nth-child(3){
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        top: 0;
+        right: 0;
+         animation: animate1 2s linear infinite;
+        animation-fill-mode: both;
+            animation-delay: 1s;
+  
+      }
+          span:nth-child(4){
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        bottom: 0;
+        left: -3.5%;
+        animation: animate1 2s linear infinite reverse;
+        animation-fill-mode: both;
+            animation-delay: 1s;
+      }
+      }
+    }
+    &:hover{
+      filter: blur(0);
+      cursor: pointer;
+      transform: scale(1.5);
+      transition: 600ms;
+      }
+      a{
+        text-decoration: none;
+        &:visited{
+          color: white;
+        }
+    }
+  }
+li:nth-child(4){
+    overflow: hidden;
+    padding-right: 3.7px;
+    padding-left: 2.3px;
+    a{
+      color: white;
+      position: relative;
+      text-align: center;
+      &:hover{
+      
+      span{
+        background-image: linear-gradient(to right, #00FF33,#0FDDAF);
+        z-index: 3;
+      }
+      span:nth-child(1){
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        animation: animate 2s linear infinite;
+        animation-fill-mode: both;
+          margin-bottom: 1%;
+      }
+      span:nth-child(2){
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        animation: animate 2s linear infinite reverse;
+        animation-fill-mode: both;
+      }
+          span:nth-child(3){
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        top: 0;
+        right: 0;
+         animation: animate1 2s linear infinite;
+        animation-fill-mode: both;
+            animation-delay: 1s;
+  
+      }
+          span:nth-child(4){
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        bottom: 0;
+        left: -7%;
+        animation: animate1 2s linear infinite reverse;
+        animation-fill-mode: both;
+            animation-delay: 1s;
+      }
+      }
+    }
+    &:hover{
+      filter: blur(0);
+      cursor: pointer;
+      transform: scale(1.5);
+      transition: 600ms;
+      }
+      a{
+        text-decoration: none;
+        &:visited{
+          color: white;
+        }
+    }
+  }
+li:nth-child(5){
+    overflow: hidden;
+    padding-right: 3.5px;
+   padding-left: 2.35px;
+    a{
+      color: white;
+      position: relative;
+      text-align: center;
+      &:hover{
+      
+      span{
+        background-image: linear-gradient(to right, #00FF33,#0FDDAF);
+        z-index: 3;
+      }
+      span:nth-child(1){
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        animation: animate 2s linear infinite;
+        animation-fill-mode: both;
+          margin-bottom: 1%;
+      }
+      span:nth-child(2){
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        animation: animate 2s linear infinite reverse;
+        animation-fill-mode: both;
+      }
+          span:nth-child(3){
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        top: 0;
+        right: 0;
+         animation: animate1 2s linear infinite;
+        animation-fill-mode: both;
+            animation-delay: 1s;
+  
+      }
+          span:nth-child(4){
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        bottom: 0;
+        left: -5%;
+        animation: animate1 2s linear infinite reverse;
+        animation-fill-mode: both;
+            animation-delay: 1s;
+      }
+      }
+    }
+    &:hover{
+      filter: blur(0);
+      cursor: pointer;
+      transform: scale(1.5);
+      transition: 600ms;
+      }
+      a{
+        text-decoration: none;
+        &:visited{
+          color: white;
+        }
+    }
+  }
+}
+
+
+
+
+.contacts_container{
+  position: absolute;
+  display: flex;
+  width: 50%;
+  top: 60%;
+  left: 27.5%;
+  i{
+  font-size: $font-primary;
+  margin: 0 50px;
+    cursor: pointer;
+    transition: 500ms;
+  }
+  i:hover:nth-child(1){
+    color: lighten(darkslateblue,10%);
+    transform: scale(1.1);
+  }
+    i:hover:nth-child(2){
+    color: #1DA1F2;
+      transform: scale(1.1);
+  }
+    i:hover:nth-child(3){
+    color: darken(#C13584,10%);
+      transform: scale(1.1);
+  }
+    i:hover:nth-child(4){
+    color: darken(red,20%);
+      transform: scale(1.1);
+  }
+}
+
+
+.parallax{
+  background-image: url(images/joshua-earle-8MbdD0pHXGY-unsplash.jpg);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  h1{
+    color: $color-primary;
+    position: absolute;
+    top: 30%;
+    left: 44%;
+    font-size: $font-primary;
+  }
+}
+.parallax1{
+  background-image: url(images/paul-gilmore-km74CLco7qs-unsplash.jpg);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  h1{
+    color: $color-primary;
+    position: absolute;
+    top:30%;
+    left: 38%;
+    font-size: $font-primary;
+  }
+}
+.parallax2{
+  background-image: url(images/agustin-diaz-7F65HDP0-E0-unsplash.jpg);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  h1{
+    color: $color-primary;
+    position: absolute;
+    top: 30%;
+    left: 44%;
+    font-size: $font-primary;
+  }
+}
+.parallax3{
+  background-image: url(images/jakob-owens-5F_c9i3JP0I-unsplash.jpg);
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  h1{
+    color: $color-primary;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-size: $font-primary;
+  }
+}
+
+.parallax4{
+  background-image: url(images/clarisse-meyer-FQ96bh4O1tY-unsplash.jpg);
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  margin-top: 4%;
+  h1{
+    color: $color-primary;
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    font-size: $font-primary;
+  }
+}
+
+@import "media";
+
+

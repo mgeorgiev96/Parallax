@@ -1,0 +1,44 @@
+@media all and (max-width:750px){
+    .menu{
+        justify-content: flex-start;
+        li{
+        }
+    }
+    .parallax{
+        h1{
+            font-size: 3rem;
+            left: 38%;
+        }
+    }
+    .parallax1{
+        h1{
+            font-size: 3rem;
+            left: 20%;
+        }
+    }
+    .parallax2{
+        h1{
+            font-size: 3rem;
+            left: 38%;
+        }
+    }
+    .parallax3{
+        h1{
+            font-size: 3rem;
+            left: 26%;
+        }
+    }
+    .parallax4{
+        h1{
+            font-size: 2.8rem;
+            left: 10%;
+        }
+    }
+    .contacts_container{
+        left: 17%;
+        i{
+            font-size: 2rem;
+            margin: 0 20px;
+        }
+    }
+}
